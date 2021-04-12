@@ -50,7 +50,7 @@ const dishObj = dishes.map((dish,i)=>({id:i,title:dish}));
 function App() {
   return (
     <div className="App">
-      <Header name="Nikolay"/>
+      <Header name="Myke"/>
       <Main adjective="amaizing" dishes={dishObj}/>
       <Footer year={new Date().getFullYear()}/>
     </div>
