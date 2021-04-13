@@ -1,20 +1,18 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import logo from './logo.svg';
 import './App.css';
 
-function App(props) {
-  const [emotion, setEmotion] = useState("happy");
+function App() {
+  const [checked, setChecked] = useState(false);
 
-  useEffect(()=>{
-    console.log(`It's ${emotion} around here!`)
-  })
+  function toggle(){
+    setChecked((checked)=>!checked);
+  }
 
   return(
   <>
-    <h1>Current emotion is {emotion}.</h1>
-    <button onClick={()=>setEmotion("happy")}>Happy</button>
-    <button onClick={()=>setEmotion("frustrate")}>Frustrate</button>
-    <button onClick={()=>setEmotion("enthusiastic")}>Enthuse</button>
+   <input type="checkbox" value={checked} onChange={toggle}></input>
+  <p>{checked ? "Checked" : "Not checked"}</p>
   </>
   )
 }
