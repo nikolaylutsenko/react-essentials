@@ -12,9 +12,6 @@ function AppTwo(){
 }
 
 ReactDOM.render(
-  <React.Fragment>
-<App/>
-<AppTwo/>
-</React.Fragment>,
+<App authorized = {true}/>,
  document.getElementById('root')
 );
