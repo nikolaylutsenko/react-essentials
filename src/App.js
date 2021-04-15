@@ -38,4 +38,8 @@ function App({login}) {
   return <div>No User Available</div>
 }
 
+export function timesTwo(params) {
+    return params * 2;
+}
+
 export default App;
