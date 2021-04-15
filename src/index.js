@@ -12,6 +12,6 @@ function AppTwo(){
 }
 
 ReactDOM.render(
-<App/>,
+<App login="nikolaylutsenko"/>,
  document.getElementById('root')
 );
